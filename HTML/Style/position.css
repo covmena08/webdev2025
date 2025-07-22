@@ -1,0 +1,70 @@
+/* Static positioning */
+.container {
+    padding: 50px;
+    margin: 50px;
+    position: relative;
+    border: 10px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container p{
+    line-height: 50px;
+}
+.box {
+    color: #ffffffff;
+    background-color: darkgreen;
+    padding: 20px;
+}
+
+/*Relative positioning*/
+.relative-container {
+    padding: 50px;
+    margin: 50px;
+    border: 10px solid #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.relative-container p{
+    line-height: 50px;
+}
+.relative-box{
+    position: relative;
+    left: 100px;
+    color: #ffffffff;
+    background-color: darkgreen;
+    padding: 20px;
+}
+/*Absolute positioning*/
+.absolute-container {/*Parent div to absolute-box div below*/
+    position: relative;
+    padding: 50px;
+    margin: 50px;
+    border: 10px solid #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.absolute-container p{
+    line-height: 50px;
+}
+.absolute-box{
+    position: absolute;
+    top: 200px;
+    color: #ffffffff;
+    background-color: darkgreen;
+    padding: 20px;
+}
+/*Fixed positioning*/
+.fixed-container {/*Parent div to absolute-box div below*/
+    position: relative;
+    padding: 50px;
+    margin: 50px;
+    border: 10px solid #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fixed-container p{
+    line-height: 50px;
+}
+.fixed-box{
+    position: fixed;
+    top: 200px;
+    color: #ffffffff;
+    background-color: darkgreen;
+    padding: 20px;
+}

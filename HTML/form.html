@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h2>Login form</h2>
+        <form>
+            <label>Username:</label><!--A caption used to describe the form itself or a part of it.-->
+            <!--The input element is a self closing tag and its behaviour can differ by changing the value of the proprty "type="-->
+            <input type="text"> <!--This is a text field-->
+            <label>Password:</label>
+            <input type="password"> <!--This is a password field-->
+            <input type="submit" value="Login"> <!--This is a submit button-->
+        </form> 
+        <hr>
+        <!-- Student detail form-->
+        <h2>Student Registration</h2>
+        <form>
+            <label>Reg. No.:</label>
+            <input type="text"><br><br>
+            <label>Name:</label>
+            <input type="text"><br><br>
+            <label>Email</label>
+            <input type="email"><br><br>
+            <label>Phone:</label>
+            <input type="number"><br><br><!--It is better to use type='number' instead of ='tel' because the previous permits only numbers for the user-->
+            <label>Gender:</label><br><br>
+            <input type="radio" name="gender" id="male">
+            <label>Male</label>
+            <input type="radio" name="gender" id="female">
+            <label>Female</label><br><br>
+            <label>Hobbies:</label><br><br>
+            <input type="checkbox" name="hobbies" id="football">
+            <label>Football</label><br><br>
+            <input type="checkbox" name="hobbies" id="basketball">
+            <label>Basketball</label><br><br>
+            <input type="checkbox" name="hobbies" id="swimming">
+            <label>Swimming</label><br><br>
+            <label>City:</label><br> <br>
+            <select name="city" id="city"><!--A listbox for a different options you can scroll through-->
+                <option value="">Select City</option><!--Represents different default options/values in listbox -->
+                <option value="Budapest">Budapest</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Beijing">Beijing</option>
+                </select><br><br>
+                <input type="submit" value="Save data"> <!--This is a submit button-->
+        </form>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+#students{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#students td, #students th, #students tr{
+    border: 1px solid #666;
+    padding: 10px;
+    
+}
+
+#students tr:nth-child(even){
+    background-color: lightblue;
+    text-align: left;
+}
+#students tr:hover{
+    background-color: lightgreen;
+    text-align: left;
+}
+#students th{
+    background-color: black;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: left;
+}
+
+
+
+
+/*Table of Car Manufacturers*/
+.cars{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.cars td, .cars th, .cars tr{
+    border: 1px solid #666;
+    padding: 10px;
+}
+
+.cars tr:nth-child(odd){
+    background-color: lightblue;
+    text-align: left;
+}
+.cars tr:hover{
+    background-color: lightgreen;
+    text-align: left;
+}
+.cars th{
+    background-color: black;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: left;
+}

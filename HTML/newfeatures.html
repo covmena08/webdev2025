@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HTML5 features</title>
+    </head>
+    <body>
+        <!-- Inputes types in HTML5-->
+         <h2>Input type color</h2>
+         <label for="color">Set a color:</label>
+        <input type="color" value="#666666" id="color">
+        <button onclick="getValue();">Show value</button>
+
+        <Script>
+            function getValue() {
+                let myColor = document.getElementById("color").value;
+                alert(myColor);
+            }
+        </Script>
+
+        <hr>
+        <h2>Input type date</h2>
+        <label>Set a date:</label>
+        <input type="date">
+
+        <hr>
+        <h2>Input type date and time</h2>
+        <label>Set a date and time:</label>
+        <input type="datetime-local">
+
+        <hr>
+        <h2>Input type: Month</h2>
+        <label>Set Month:</label>
+        <input type="month">
+
+        <hr>
+        <h2>Input type: Number</h2>
+        <label>Set Number:</label>
+        <input type="number" min="3" max="9" step="0.5">
+
+        <hr>
+        <h2>Input type: Number range</h2>
+        <label>Set Number range:</label>
+        <input type="range" min="1" max="10" step="2">
+
+        <hr>
+        <h2>Input type: Search</h2>
+        <label>Search:</label>
+        <input type="search">
+
+        <hr>
+        <h2>Input type: Week</h2>
+        <label>Week:</label>
+        <input type="week">
+
+    </body>
+    </body>
+</html>

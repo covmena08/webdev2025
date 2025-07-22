@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(rgba(255, 81, 0, 0.664), green, blue);
+}
+div{
+    width: 300px; /* px=picture element, other measurement is dpi=dot per inch, the higher the value the sharper the image*/
+    height: 300px;
+    padding: 15px 10px 5px 3px; /*this is similar to the code below, but it is a short hand= 1 line of shorter, more visible code*/
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    border: 10px solid black;  /* This is a short hand;*/   /* border can be solid, dashed, dotted, double, groove, ridge, inset, outset*/
+    border-width: 10px; /* border widths: thin, medium, thick, or px value*/
+    /* Border side width values can also be changed with a short hand, SYNTAX: BORDER-WIDTH; 10px, 20px, 5px, 4px instead of: border-width-left/right/top/bottom*/
+
+    border-style: solid; /* border styles: solid, dashed, dotted, double, groove, ridge, inset, outset*/
+    border-color: black; /* border color: color name, hex value, or rgb value*/
+    margin: 20px;
+
+}
+p{
+    border: 5px, solid blue;
+    padding: 10px 15px 10px 7px;
+    margin: 15px;
+
+}
+p.outline{
+    outline-style: groove; /* outline styles: solid, dashed, dotted, double, groove, ridge, inset, outset*/
+    outline-width: 20px;
+    border: 10px solid blue; /* border styles: solid, dashed, dotted, double, groove, ridge, inset, outset*/
+}

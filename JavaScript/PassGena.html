@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>Web Development Assignment</p>
+        </header>
+        <main>
+            <h1>Password Generator</h1>
+            <input type="text" id="passwordInput" readonly/>
+            <br/>
+            <button id="generate">Generate Password</button>
+            <button id="copy">Copy Password</button>
+        </main>
+    </div>
+
+    <script>
+        function generatePassword(length) {
+            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+            let password = "";
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset[randomIndex];
+            }
+            return password;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const generateBtn = document.getElementById("generate");
+            const copyBtn = document.getElementById("copy");
+            const passwordInput = document.getElementById("passwordInput");
+
+            generateBtn.addEventListener("click", function () {
+                const password = generatePassword(12);
+                passwordInput.value = password;
+            });
+
+            copyBtn.addEventListener("click", function () {
+                navigator.clipboard.writeText(passwordInput.value)
+                    .then(() => alert("Password copied!"))
+                    .catch(err => alert("Failed to copy: " + err));
+            });
+        });
+    </script>
+</body>
+</html>

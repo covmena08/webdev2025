@@ -1,0 +1,46 @@
+/* Element Selectors */
+body {
+    background-color: cyan;
+}
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    Id Selectors */
+#p1{
+    font-family: sans-serif;
+}
+/* Class Selectors */
+.head2{
+    color: brown;
+    font-family: sans-serif;
+}
+.paragraph{
+    color: gray;
+    font-family: monospace;
+}
+p.paragraph{
+    background-color: magenta;
+}
+div.paragraph{
+    background-color: lightpink;
+}
+h2 em{
+    color: yellow;
+}
+ul.menu{
+    list-style-type: none;
+    padding: 0;
+}
+ul.menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+ul.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}

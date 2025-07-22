@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Document Object Model</title>
+        </head>
+        <body>
+            <!--DOM selectors-->
+            <h1 id="first">Web development</h1>
+            <ul id="second">
+                <li>Back-end</li>
+                <li>Front-end</li>
+                <li>Full-stack</li>
+            </ul>
+            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Neque, magni, aut dolore voluptates culpa deserunt nostrum vero magnam expedita consequatur 
+            quos incidunt ad assumenda eum laborum suscipit laboriosam ipsum eius?</p>
+            <div class="block test">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Neque, magni, aut dolore voluptates culpa deserunt nostrum vero magnam expedita consequatur
+            quos incidunt ad assumenda eum laborum suscipit laboriosam ipsum eius?</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Neque, magni, aut dolore voluptates culpa deserunt nostrum vero magnam expedita consequatur 
+            quos incidunt ad assumenda eum laborum suscipit laboriosam ipsum eius?</p>
+        <hr>
+        <script>
+            //alert (document.documentElement.getAttribute("lang"));
+            //set the background color of the body
+            document.body.style.background= "green";
+
+            //display the name of the head element's first child
+            //alert(document.head.firstChild.nodeName);
+
+            // get element by id and style it bz assigning it to a variable
+            let match = document.getElementById("second"); //
+            match.style.background = "yellow";
+            // OR get element by id and style it by using the style property
+            //document.getElementById("second").style.backgroung = "yellow";
+
+            // select the element with class "test"
+            let matches=document.getElementsByClassName("test");
+            document.write(`The number of selected items: ${matches.length}`);
+            //Applying the bold style to the first element in the section
+            matches[0].style.fontweight="bold";
+            //Applying the italic style to the last element in the section
+            matches[matches.length-1].style.fontStyle="italic";
+            // camel case: camelCaseType, kebab case: kebab-case, snake case: snake_case_type, Pascal case: PascalCaseType
+            //Highlight each element's background using the for...in loop
+            // for(let element in matches){
+              //matches[element].style.background="pink";
+            // }7
+
+            //Selecting elements by the tag name
+            let matchTag=document.getElementsByTagName("p");
+            document.write(`<br>The number of selected items with the tag name p, are: ${matches.length}`);
+            //for(let element in machtag){
+            //matchTag[element].style.background="red";
+            // -- element.style.background="yellow";
+           // }
+
+
+           //Solution to Uncaught TypeError: Cannot set properties of undefined (setting 'style')
+           let machTag=document.getElementsByTagName("p")
+           let i;
+           for(i=0; i<matchTag.length; i++){
+            matchTag[i].style.background="yellow";
+           }
+// Select all list items (li) in the unordered list (ul)
+// let matchListItem = document.querySelectorAll("ul li");
+// document.write("<br>The number of list items is:", matchListItem.length, "<br>");
+
+// for (let listElement of matchListItem) {
+//     document.write(listElement.innerHTML + "<hr>");
+// }
+let matchItem=document.querySelectorAll("ul li.nextstep");
+//console.log(matchItem.lenght)
+matchItem[0].style.textDecoration="rule out"
+
+        </script>
+        </body>
+        
+        
+    
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Object Model Styling</title>
+        <style>
+            .disabled {
+                color: greenyellow;
+                font-size: 20px;
+                font-family: sans-serif;
+                background-color: gray;
+            }
+            .highlight {
+                font-weight: 40px;
+                border: 2px solid magenta;
+                border-radius: 20px;
+            }
+            .warning {
+                color: yellow;   
+            }
+            .info {
+                background-color: brown;
+            }
+            .two{
+                opacity: 0.3;
+            }
+            .three{
+                font-size: 40px;
+            }
+            .four{
+                border: 10px solid red;
+            }
+            .green{
+                color: green;
+            }
+            .border{
+                border: 10px solid blue;
+            }
+            .largeFont{
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Using Javascript To Set Inline Styles</h1>
+        <p id="firstPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia impedit ullam, eius corporis id, 
+            sed tempora et quaerat voluptatem aspernatur eveniet! Dolorem minima explicabo dignissimos, autem placeat enim et repudiandae.</p>
+        <p id="secondPara" style="color: green; font-size: 20px; font-family: Arial;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia impedit ullam, eius corporis id, 
+            sed tempora et quaerat voluptatem aspernatur eveniet! Dolorem minima explicabo dignissimos, autem placeat enim et repudiandae.</p>
+
+        <!--Add or Replace CSS classes-->
+            <div id="firstDiv" class="disabled">
+                <h1>Add or replace CSS classes</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Ipsum facilis et vitae, dolores asperiores nostrum quae sed cupiditate sint sapiente, sit veritatis blanditiis voluptas recusandae perferendis cumque ratione totam atque.</div>
+
+            <div id="secondDiv" class="info">
+                <h1>Using the Classlist Property</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Ipsum facilis et vitae, dolores asperiores nostrum quae sed cupiditate sint sapiente, sit veritatis blanditiis voluptas recusandae perferendis cumque ratione totam atque.</div>
+        <script src="domstyle.js"></script>
+    </body>
+</html>

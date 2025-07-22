@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo class</title>
+        <style>
+            ol{
+                padding: 0;
+                list-style: none;
+                width: 60%;
+            }
+            ol li{
+                padding: 10px 0px;
+                border-top: 1px solid black;
+            }
+            ol li:first-child{
+                border-top: none;
+            }
+            ol li:last-child{
+                border-bottom: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Syntax: selector:pseudo-class{property:value;}-->
+        <!--  :first child -->
+          <h2>Shopping list</h2>
+          <ol>
+            <li>3 packets of milk</li>
+            <li>2 loaves of bread</li>
+            <li>2 pieces of butter</li>
+            <li>1 packet of cheese</li>
+          </ol>
+        <!-- Refer to the table.html
+         use of the :nth childpseudo class
+         Syntax:
+         selector:nth-child(2n){property:value;} -->
+    </body>
+</html>
