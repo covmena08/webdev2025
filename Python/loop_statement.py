@@ -40,4 +40,4 @@ countNumber= 0  # Initialize a counter variable
 while countNumber < 6:  # Loop as long as countNumber is less than 6
     countNumber += 1  # Increment the counter by 1
     print("Iteration No. is: {}".format(countNumber))  # Print the current iteration number
-print("The while loop iteration is completed")  # Print a message after the loop completes
+print("The while loop iteration is completed")  # Print a message after the loop completes, indicating the end of the loop
