@@ -81,6 +81,8 @@ print("Final value of a is: {}".format(a))  # Print the final value of a after a
 # Octal numbers(=base 8) use eight digits (0-7) to represent values, while hexadecimal numbers(=base 16) use sixteen digits (0-9 and A-F) to represent values. Example: a decimal number 14 is represented as 16 in octal, E in hexadecimal, and 1110 in binary.
 
 # Examples: Bitwise operations
+# Function to convert decimal to binary
+# bin(n)
 a=20
 b=10
 c=bin(a)  # Convert a=20 to binary, c becomes '0b10100'
@@ -95,7 +97,16 @@ e=a | b  # Perform bitwise OR operation on a and b, e becomes 30. The OR operati
 print("the OR result is", bin(e))  
 
 e= ~a  # Perform bitwise NOT operation on a, e becomes -21. The NOT operation inverts all bits of a, changing 0s to 1s and 1s to 0s.
-print("the NOT result is", bin(e))  # Print the binary representation of the NOT
+print("the NOT result is", bin(e)) 
+
+e=a ^ b  # Perform bitwise XOR operation on a and b, e becomes 30. The XOR operation compares each bit of a and b, and sets the corresponding bit in the result to 1 if the bits are different (one is 0 and the other is 1), otherwise it sets it to 0.
+print("the XOR result is", bin(e)) 
+
+e=a << 2  # Perform left shift operation on a by 2 bits, e becomes 80. The left shift operation shifts the bits of a to the left by the specified number of positions, filling the rightmost bits with 0s.
+print("the left shift result is", bin(e)) 
+
+e=a >> 2  # Perform right shift operation on a by 2 bits, e becomes 5. The right shift operation shifts the bits of a to the right by the specified number of positions, filling the leftmost bits with 0s.
+print("the right shift result is", bin(e)) 
 
 
 #0=0000
@@ -108,9 +119,7 @@ print("the NOT result is", bin(e))  # Print the binary representation of the NOT
 # 7=0111
 # 8=1000
 #The rule of the sequence of binary numbers is that each digit represents a power of 2, starting from the rightmost digit which is 2^0, then 2^1, 2^2, and so on.
-# Function to convert decimal to binary
-# bin(n)
-#Example:
+
 
 
 
