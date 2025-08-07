@@ -57,16 +57,3 @@ discount = 0  # Initialize discount to 0
 
 # payableAmount= amount-discount
 # print("Payable amount: ", payableAmount, "Subtracted discount: ", discount)
-
-
-
-
-
-
-
-# num=7
-# print("Then number is: ", num)
-# if num % 2 == 0:
-#     print("{} is divisable by both 2 and 3".format(num))
-
-# print("...End of Program...")    

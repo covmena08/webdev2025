@@ -38,7 +38,7 @@ def positional(str):
     return
 #Call the positional function with a string argument
 # positional() # If arguement is not passed, it will raise an error: TypeError: positional() missing 1 required positional argument: 'str'. This is because the function expects a string argument because it has a parameter `str` defined in line 35, but no argument is provided when calling the function.
-# Default arguments: These are arguments that have a default value specified in the function definition. If no value is provided for these arguments when calling the function, the default value is used.
+# Default arguments: These are arguments that have a default value specified in the function definition. If no value is provided by user for these arguments when calling the function, the default value is used.
 # def default(name=, age=20):
 #     "This function prints a passed string into it"
 #     print("Name:", name)  # Print the developer's name
@@ -54,12 +54,12 @@ def positional(str):
 #     print(str)  # Print a greeting message with the string
 #     return
 # # Call the positional function with a keyword argument
-# keyword(str="keyword explanation!")  #Directly specify the parameter name `str` and its value "keyword explanation!" when calling the function. This allows you to pass the argument without worrying about its position in the function definition.
+# keyword(str="keyword explanation!")  #Directly specify the parameter name `str` and its value "keyword explanation!" when calling the function. This al lows you to pass the argument without worrying about its position in the function definition.
 # # Example 2
 # def devInfo(name, age):
 #     "This function prints the name and age of a developer"
 #     print(" Name: ", name)  # Print the developer's name and age
-#     print(" Age: ", age)  # Print the developer's age
+#     print(" Age: ", age)  # Print the developers age
 #     return
 # # Call the devInfo function with keyword arguments
 # devInfo(age=25, name="Lenin")  # Pass the arguments in a different order using keyword arguments. The function will correctly assign the values to the parameters based on their names.

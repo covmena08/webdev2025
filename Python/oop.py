@@ -98,33 +98,69 @@ print(my_phone.description())
     
 # Implement a solution to give two outputs. The first is the division of two arguements and the second gives the mod value of the operands
 
-class Division:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-    def divide(self):
-        return self.a / self.b  # Return the division of a by b
+# class Division:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+#     def divide(self):
+#         return self.a / self.b  # Return the division of a by b
 
-# Modulus class    
-class Modulus:
-    def __init__(self, c, d):
-        self.c = c
-        self.d = d
-    def mod_divide(self):
-        return self.c % self.d  # Return the division of a by b
+# # Modulus class    
+# class Modulus:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+#     def mod_divide(self):
+#         return self.a % self.b  # Return the division of a by b
     
 
-# Child class having multiple inheritance
-class Div_Mod(Division, Modulus):
-    def __init__(self, e, f):
-        self.e = e
-        self.f = f
-    def div_and_mod(self):
-        divVal = Division.divide(self)
-        modVal = Modulus.mod_divide(self)
-        return (divVal, Div_Mod)
+# # Child class having multiple inheritance
+# class Div_Mod(Division, Modulus):
+#     def __init__(self, a, b):
+#         self.a= a
+#         self.b = b
+#     def div_and_mod(self):
+#         divVal = Division.divide(self)
+#         modVal = Modulus.mod_divide(self)
+#         return (divVal, modVal)
     
-value = Div_Mod(10, 3)  # Create an instance of the Div_Mod class with values 10 and 3
-print("Division:", value.divide())  # Call the divide method to get the division result
-print("Modulus:", value.mod_divide())  # Call the mod_divide method to get the modulus result
-print("Division Modulus:", value.div_and_mod())  # Call the div_and_mod method to get both results as a tuple
+# value = Div_Mod(10, 3)  # Create an instance of the Div_Mod class with values 10 and 3
+# print("Division:", value.divide())  # Call the divide method to get the division result
+# print("Modulus:", value.mod_divide())  # Call the mod_divide method to get the modulus result
+# print("Division Modulus:", value.div_and_mod())  # Call the div_and_mod method to get both results as a tuple
+
+#Fly class 
+class Fly:
+    def fly(self):
+        return f"A bird can fly"
+class Swim:
+    def swim(self):
+        return f"A bird can swim"
+class Swan (Fly, Swim):
+    def sound (self):
+        return f"A swan quacks"
+    
+Jess = Swan()  # Create an instance of the Swan class. Jess is swan object or an instance of the Swan class
+
+# Calling the methods from bothe base classes. A base class is often referred to as a parent class or superclass.
+# print(Jess.fly())  # Call the fly method from the Fly class
+# print(Jess.swim())  # Call the swim method from the Swim class
+# print(Jess.sound())  # Call the swim method from the Swan class using the Jess instance
+
+# Class excercise
+# Create a class called Greet with a method greet() that prints the greeting for a name that is provided as an arguement.
+class Greet:
+    def greet(self, name):
+        return f"Hello, {name}!"
+greeting = Greet()  # Create an instance of the Greet class
+print(greeting.greet("Alice"))  # Calling the greet method with "Alice" as an argument
+
+# Create a Calculator class with 2 methods: add and subtract. The add method should take two numbers as arguments and return their sum, while the subtract method should take two numbers and return their difference.
+class Calculator:
+    def sum(self, a, b):
+        return a + b
+    def sub(self, c, d):
+        return c - d
+calc= Calculator()  # Create an instance of the Calculator class
+print(calc.sum(10, 5))  # Calling the sum method with 10 and 5 as arguments
+print(calc.sub(10, 5))  # Calling the sub method with 10 and 5 as arguments

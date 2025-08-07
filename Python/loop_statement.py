@@ -26,6 +26,7 @@ print("Total of all numbers in the tuple is: ", total)  # Print the total of all
 # else:
 #     code to be executed after the loop completes normally
 # Example: A range with value 6 and the value of each traversal is printed before the iteration stops and the else block is executed
+# A range is a built-in function that generates a sequence of numbers.
 for count in range(6):  # Loop through numbers from 0 to 5
     print("Iteration No. is: {}".format(count))  # Print the current iteration number
 else:
